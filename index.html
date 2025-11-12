@@ -13,331 +13,342 @@
 </head>
 
 <body>
+    <div class="container shadow">
+
+    
     <form action="">
-    <fieldset>
-        <div class="container shadow mt-5 p-2 mb-2">
-            <img src="/satyamev_jayate.png" class="img-fluid float-start my-4" width="7%" alt="">
-            <img src="/Aadhaar_Logo.png" class="img-fluid float-end my-5" width="10%" alt="">
-            <h2 class="text-center my-2">FORM 1: Aadhaar Enrolment and Update</h2>
-            <h3 class="text-center">For (a) Resident Indian, or (b) Non-Resident Indian having Proof of Address in India
-                (aged 18 years and
-                above)
-            </h3>
-            <p class="text-center">Please follow the instructions given below this form and use only upper case (block
-                or capital) letters.
-            </p>
-        </div>
-    </fieldset>
+        <fieldset>
+            <div class="container shadow mt-5 p-2 mb-2">
+                <img src="/satyamev_jayate.png" class="img-fluid float-start my-4" width="7%" alt="">
+                <img src="/Aadhaar_Logo.png" class="img-fluid float-end my-5" width="10%" alt="">
+                <h2 class="text-center my-2">FORM 1: Aadhaar Enrolment and Update</h2>
+                <h3 class="text-center">For (a) Resident Indian, or (b) Non-Resident Indian having Proof of Address in
+                    India
+                    (aged 18 years and
+                    above)
+                </h3>
+                <p class="text-center">Please follow the instructions given below this form and use only upper case
+                    (block
+                    or capital) letters.
+                </p>
+            </div>
+        </fieldset>
 
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label class="fw-bold">Purpose :</label>
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label class="fw-bold">Purpose :</label>
 
-            <input type="radio" name="purpose" id="purpose">
-            <label for="purpose">Enrolment</label>
-
-
-            <span class="mx-4">OR</span>
+                <input type="radio" name="purpose" id="purpose">
+                <label for="purpose">Enrolment</label>
 
-
-            <input type="radio" name="purpose" id="update">
-            <label for="update">Update</label>
-
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label style="font-weight: bold">Resident status :</label>
-
-            <input type="radio" name="Resident" id="Resident-India">
-            <label for="Resident-India">Resident Indian</label>
-
-
-            <span class="mx-4">OR</span>
-
-
-            <input type="radio" name="Resident" id="Resident-Non">
-            <label for="Resident-Non">Non-Resident Indian (NRI)</label>
-
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label style="font-weight: bold">Demographic information</label>
-            <br><br>
-
-            <span class="mx-2">
-                <label class="fw-bold">Name:</label>
-                <input type="text" id="name" placeholder="Enter Your Name" required>
-                <p id="nameError" class="msg text-danger"></p>
-            </span>
 
-            <span class="mx-2">
-                <label class="fw-bold">Gender:</label>
-                <input type="radio" name="Gender" id="male">
-                <label for="male">Male</label>
-            </span>
+                <span class="mx-4">OR</span>
+
+
+                <input type="radio" name="purpose" id="update">
+                <label for="update">Update</label>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label style="font-weight: bold">Resident status :</label>
+
+                <input type="radio" name="Resident" id="Resident-India">
+                <label for="Resident-India">Resident Indian</label>
+
+
+                <span class="mx-4">OR</span>
+
+
+                <input type="radio" name="Resident" id="Resident-Non">
+                <label for="Resident-Non">Non-Resident Indian (NRI)</label>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label style="font-weight: bold">Demographic information</label>
+                <br><br>
+
+                <div class="mb-3">
+                    <label class="fw-bold">Name:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter Your Name" required>
+                    <p id="nameError" class="msg text-danger"></p>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-bold">Gender:</label>
+                    <span class="mx-2">
+                        <input type="radio" name="Gender" id="male">
+                        <label for="male">Male</label>
+                    </span>
+
+                    <span class="mx-2">
+                        <input type="radio" name="Gender" id="female">
+                        <label for="female">Female</label>
+                    </span>
 
-            <span class="mx-2">
-                <input type="radio" name="Gender" id="female">
-                <label for="female">Female</label>
-            </span>
+                    <span class="mx-2">
+                        <input type="radio" name="Gender" id="Other">
+                        <label for="Other">Other</label>
+                    </span>
 
-            <span class="mx-2">
-                <input type="radio" name="Gender" id="Other">
-                <label for="Other">Other</label>
-            </span>
+                </div>
 
-            <span class="mx-2">
-                <label class="fw-bold">Date Of Birth:</label>
-                <input type="date" placeholder="" required>
-            </span>
+                <div class="mb-3">
+                    <label class="fw-bold">Date Of Birth:</label>
+                    <input type="date" placeholder="" class="form-control" required>
+                </div>
 
-            <span class="mx-2">
-                <label class="fw-bold">Age:</label>
-                <input type="text" id="age" placeholder="Enter Your Age" required>
-                <p id="ageError" class="msg text-danger"></p>
-            </span>
+                <div class="mb-3">
+                    <label class="fw-bold">Age:</label>
+                    <input type="text" id="age" class="form-control" placeholder="Enter Your Age" required>
+                    <p id="ageError" class="msg text-danger"></p>
+                </div>
 
-            <span class="mx-2">
-                <label class="fw-bold">Email:</label>
-                <input type="email" id="email" placeholder="your_email@gmail.com" required>
-            </span>
+                <div class="mb-3">
+                    <label class="fw-bold">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="your_email@gmail.com" required>
+                </div>
 
-            <span class="mx-2">
-                <label class="fw-bold">Number:</label>
-                <input type="text" id="number" placeholder="00000000000" required>
-                <p id="numberError" class="msg text-danger"></p>
-            </span>
+                <div class="mb-3">
+                    <label class="fw-bold">Number:</label>
+                    <input type="text" id="number" class="form-control" placeholder="00000000000" required>
+                    <p id="numberError" class="msg text-danger"></p>
+                </div>
 
-        </div>
-    </fieldset>
+            </div>
+        </fieldset>
 
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label class="fw-bold">Basis of enrolment/update:</label>
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label class="fw-bold">Basis of enrolment/update:</label>
 
-            <input type="radio" name="basic-enrolment" id="basic-enrolment">
-            <label for="basic-enrolment">Document verification</label>
+                <input type="radio" name="basic-enrolment" id="basic-enrolment">
+                <label for="basic-enrolment">Document verification</label>
 
-            <span class="mx-4">OR</span>
+                <span class="mx-4">OR</span>
 
-            <input type="radio" name="basic-enrolment" id="basic-update">
-            <label for="basic-update">Confirmation by Head of Family (HoF)
+                <input type="radio" name="basic-enrolment" id="basic-update">
+                <label for="basic-update">Confirmation by Head of Family (HoF)
 
-            </label>
-        </div>
-    </fieldset>
+                </label>
+            </div>
+        </fieldset>
 
-    <fieldset>
-        <div class="container shadow">
-            <label style="font-weight: bold">For document-based enrolment/update, additional demographic information and
-                documents presented:
-            </label>
-            <br><br>
+        <fieldset>
+            <div class="container shadow">
+                <label style="font-weight: bold">For document-based enrolment/update, additional demographic information
+                    and
+                    documents presented:
+                </label>
+                <br><br>
 
-            <span class="mx-2">
-                <label class="fw-bold">Address :</label>
-                <textarea class="mb-2" cols="145" placeholder="write your address here........"></textarea>
-            </span>
+                <div class="mb-2">
+                    <label class="fw-bold">Address :</label>
+                    <textarea class="form-control mb-2" cols="145" placeholder="write your address here........"></textarea>
+                </d>
 
-            <span class="mx-2">
-                <label class="fw-bold">State:</label>
-                <input type="text" placeholder="Your State">
-            </span>
+                <div class="mb-2">
+                    <label class="fw-bold">State:</label>
+                    <input type="text" class="form-control" placeholder="Your State">
+                </div>
 
-            <span class="mx-2">
-                <label class="fw-bold">Pin code:</label>
-                <input type="text" id="pincode" placeholder="Enter Pin code" maxlength="6">
-                <p id="pinError" class="text-danger small"></p>
-            </span>
+                <div class="mb-2">
+                    <label class="fw-bold">Pin code:</label>
+                    <input type="text" id="pincode" class="form-control" placeholder="Enter Pin code" maxlength="6">
+                    <p id="pinError" class="mb-2 text-danger small"></p>
+                </div>
 
-        </div>
+            </div>
 
-    </fieldset>
+        </fieldset>
 
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label style="font-weight: bold">For HoF-based enrolment or update of address, additional information and
-                documents presented:</label>
-            <br><br>
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label style="font-weight: bold">For HoF-based enrolment or update of address, additional information
+                    and
+                    documents presented:</label>
+                <br><br>
 
-            <span class="mx-2">
+                <div class="mb-2">
 
-                <label class="fw-bold">Details of Hof:</label>
-                <input type="text" placeholder="Enter Hof Name ">
-            </span>
+                    <label class="fw-bold">Details of Hof:</label>
+                    <input type="text" class="form-control" placeholder="Enter Hof Name ">
+                </div>
 
-            <span class="mx-2">
+                <div class="mb-2">
 
-                <label class="fw-bold">Aadhaar no.:</label>
-                <input type="number" placeholder="XXXX-XXXX-XXXX" required>
-            </span>
+                    <label class="fw-bold">Aadhaar no.:</label>
+                    <input type="number" class="form-control" placeholder="XXXX-XXXX-XXXX" required>
+                </div>
 
-
-
-            <label class="fw-bold">Relationship with applicant:</label>
-            <input type="radio" name="Relationship" id="father">
-            <label for="father">Father</label>
-
-            <span class="mx-2">
-
-                <input type="radio" name="Relationship" id="mother">
-                <label for="mother">Mother</label>
-            </span>
-
-            <span class="mx-2">
-
-                <input type="radio" name="Relationship" id="Legal guardian" required>
-                <label for="Legal guardian">Legal guardian</label>
-            </span>
-
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div class="container shadow mb-2 py-2">
-            <label style="font-weight: bold">For update, additional information:</label>
-            <br><br>
-            <label class="fw-bold">Aadhaar number of applicant:</label>
-            <input type="text" id="aadhaarApplicant" placeholder="XXXX-XXXX-XXXX" required>
-            <p id="aadhaarApplicantError" class="text-danger small"></p>
-
-            <label style="font-weight: bold">Information to be updated:</label>
-
-            <span class="mx-2">
-                <input type="checkbox" id="Biometric">
-                <label for="Biometric">Biometric (photo, fingerprints and irises) </label>
-            </span>
-
-            <span class="mx-2">
-                <input type="checkbox" id="N">
-                <label for="N">Name</label>
-            </span>
-
-            <span class="mx-2">
-                <input type="checkbox" id="d">
-                <label for="d">Date of Birth</label>
-            </span>
-
-            <span class="mx-2">
-                <input type="checkbox" id="M">
-                <label for="M">Mobile NO</label>
-            </span>
-
-            <span class="mx-2">
-                <input type="checkbox" id="G">
-                <label for="G">Gender</label>
-            </span>
-
-            <span class="mx-2">
-                <input type="checkbox" id="a">
-                <label for="a">Address</label>
-            </span>
-
-
-        </div>
-
-    </fieldset>
-
-    <fieldset>
-        <div class="container text-center shadow mb-2">
-            <input type="submit" class="btn btn-primary m-2">
-        </div>
-    </fieldset>
-</form>
-
-<script>
-
-
-   document.addEventListener("DOMContentLoaded", () => {
-    const dobInput = document.querySelector('input[type="date"]');
-    const ageInput = document.getElementById('age');
-    const mobileInput = document.getElementById('number');
-    const aadhaarInput = document.querySelector('input[placeholder="XXXX-XXXX-XXXX"]'); // fixed selector
-    const pinInput = document.getElementById('pincode');
-    const pinError = document.getElementById('pinError');
-
-    // --- DOB max date ---
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    const todayStr = `${yyyy}-${mm}-${dd}`;
-    dobInput.setAttribute('max', todayStr);
-
-    // --- DOB validation ---
-    dobInput.addEventListener('change', () => {
-        let dobError = document.getElementById('dobError');
-        if (!dobError) {
-            dobError = document.createElement('p');
-            dobError.id = 'dobError';
-            dobError.className = 'text-danger small';
-            dobInput.insertAdjacentElement('afterend', dobError);
-        }
-        if (dobInput.value > todayStr) {
-            dobError.textContent = "Future date not allowed!";
-            dobInput.value = "";
-        } else {
-            dobError.textContent = "";
-        }
-    });
-
-    // --- Age validation ---
-    ageInput.addEventListener('input', () => {
-        let ageError = document.getElementById('ageError');
-        if (!ageError) {
-            ageError = document.createElement('p');
-            ageError.id = 'ageError';
-            ageError.className = 'text-danger small';
-            ageInput.insertAdjacentElement('afterend', ageError);
-        }
-
-        ageInput.value = ageInput.value.replace(/\D/g, '');
-        if (ageInput.value.length > 2) ageInput.value = ageInput.value.slice(0, 2);
-        ageError.textContent = ageInput.value === "" ? "Age is required" : "";
-    });
-
-    // --- Mobile validation ---
-    mobileInput.addEventListener('input', () => {
-        let mobileError = document.getElementById('numberError');
-        if (!mobileError) {
-            mobileError = document.createElement('p');
-            mobileError.id = 'numberError';
-            mobileError.className = 'text-danger small';
-            mobileInput.insertAdjacentElement('afterend', mobileError);
-        }
-
-        mobileInput.value = mobileInput.value.replace(/\D/g, '');
-        if (mobileInput.value.length > 10) mobileInput.value = mobileInput.value.slice(0, 10);
-        mobileError.textContent = mobileInput.value.length < 10 ? "Mobile number must be 10 digits" : "";
-    });
-
-    // --- Aadhaar validation ---
-    aadhaarInput.addEventListener('input', () => {
-        let aadhaarError = document.getElementById('aadhaarError');
-        if (!aadhaarError) {
-            aadhaarError = document.createElement('p');
-            aadhaarError.id = 'aadhaarError';
-            aadhaarError.className = 'text-danger small';
-            aadhaarInput.insertAdjacentElement('afterend', aadhaarError);
-        }
-
-        aadhaarInput.value = aadhaarInput.value.replace(/\D/g, '');
-        if (aadhaarInput.value.length > 12) aadhaarInput.value = aadhaarInput.value.slice(0, 12);
-        aadhaarError.textContent = aadhaarInput.value.length < 12 ? "Aadhaar number must be 12 digits" : "";
-    });
-
-    // --- Pin code validation ---
-    pinInput.addEventListener('input', () => {
-        pinInput.value = pinInput.value.replace(/\D/g, '');
-        if (pinInput.value.length > 6) pinInput.value = pinInput.value.slice(0, 6);
-        pinError.textContent = pinInput.value.length !== 6 ? "Pin code must be exactly 6 digits" : "";
-    });
-});
-</script>
+
+
+                <label class="fw-bold">Relationship with applicant:</label>
+                <input type="radio" name="Relationship" id="father">
+                <label for="father">Father</label>
+
+                <span class="mx-2">
+
+                    <input type="radio" name="Relationship" id="mother">
+                    <label for="mother">Mother</label>
+                </span>
+
+                <span class="mx-2">
+
+                    <input type="radio" name="Relationship" id="Legal guardian" required>
+                    <label for="Legal guardian">Legal guardian</label>
+                </span>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="container shadow mb-2 py-2">
+                <label style="font-weight: bold">For update, additional information:</label>
+                <br><br>
+                <label class="fw-bold">Aadhaar number of applicant:</label>
+                <input type="text" class="form-control" id="aadhaarApplicant" placeholder="XXXX-XXXX-XXXX" required>
+                <p id="aadhaarApplicantError" class="text-danger small"></p>
+
+                <label style="font-weight: bold">Information to be updated:</label>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="Biometric">
+                    <label for="Biometric">Biometric (photo, fingerprints and irises) </label>
+                </span>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="N">
+                    <label for="N">Name</label>
+                </span>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="d">
+                    <label for="d">Date of Birth</label>
+                </span>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="M">
+                    <label for="M">Mobile NO</label>
+                </span>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="G">
+                    <label for="G">Gender</label>
+                </span>
+
+                <span class="mx-2">
+                    <input type="checkbox" id="a">
+                    <label for="a">Address</label>
+                </span>
+
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <div class="container text-center shadow mb-2">
+                <input type="submit" class="btn btn-primary m-2">
+            </div>
+        </fieldset>
+    </form>
+    </div>
+
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const dobInput = document.querySelector('input[type="date"]');
+            const ageInput = document.getElementById('age');
+            const mobileInput = document.getElementById('number');
+            const aadhaarInput = document.querySelector('input[placeholder="XXXX-XXXX-XXXX"]'); // fixed selector
+            const pinInput = document.getElementById('pincode');
+            const pinError = document.getElementById('pinError');
+
+            // --- DOB max date ---
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const todayStr = `${yyyy}-${mm}-${dd}`;
+            dobInput.setAttribute('max', todayStr);
+
+            // --- DOB validation ---
+            dobInput.addEventListener('change', () => {
+                let dobError = document.getElementById('dobError');
+                if (!dobError) {
+                    dobError = document.createElement('p');
+                    dobError.id = 'dobError';
+                    dobError.className = 'text-danger small';
+                    dobInput.insertAdjacentElement('afterend', dobError);
+                }
+                if (dobInput.value > todayStr) {
+                    dobError.textContent = "Future date not allowed!";
+                    dobInput.value = "";
+                } else {
+                    dobError.textContent = "";
+                }
+            });
+
+            // --- Age validation ---
+            ageInput.addEventListener('input', () => {
+                let ageError = document.getElementById('ageError');
+                if (!ageError) {
+                    ageError = document.createElement('p');
+                    ageError.id = 'ageError';
+                    ageError.className = 'text-danger small';
+                    ageInput.insertAdjacentElement('afterend', ageError);
+                }
+
+                ageInput.value = ageInput.value.replace(/\D/g, '');
+                if (ageInput.value.length > 2) ageInput.value = ageInput.value.slice(0, 2);
+                ageError.textContent = ageInput.value === "" ? "Age is required" : "";
+            });
+
+            // --- Mobile validation ---
+            mobileInput.addEventListener('input', () => {
+                let mobileError = document.getElementById('numberError');
+                if (!mobileError) {
+                    mobileError = document.createElement('p');
+                    mobileError.id = 'numberError';
+                    mobileError.className = 'text-danger small';
+                    mobileInput.insertAdjacentElement('afterend', mobileError);
+                }
+
+                mobileInput.value = mobileInput.value.replace(/\D/g, '');
+                if (mobileInput.value.length > 10) mobileInput.value = mobileInput.value.slice(0, 10);
+                mobileError.textContent = mobileInput.value.length < 10 ? "Mobile number must be 10 digits" : "";
+            });
+
+            // --- Aadhaar validation ---
+            aadhaarInput.addEventListener('input', () => {
+                let aadhaarError = document.getElementById('aadhaarError');
+                if (!aadhaarError) {
+                    aadhaarError = document.createElement('p');
+                    aadhaarError.id = 'aadhaarError';
+                    aadhaarError.className = 'text-danger small';
+                    aadhaarInput.insertAdjacentElement('afterend', aadhaarError);
+                }
+
+                aadhaarInput.value = aadhaarInput.value.replace(/\D/g, '');
+                if (aadhaarInput.value.length > 12) aadhaarInput.value = aadhaarInput.value.slice(0, 12);
+                aadhaarError.textContent = aadhaarInput.value.length < 12 ? "Aadhaar number must be 12 digits" : "";
+            });
+
+            // --- Pin code validation ---
+            pinInput.addEventListener('input', () => {
+                pinInput.value = pinInput.value.replace(/\D/g, '');
+                if (pinInput.value.length > 6) pinInput.value = pinInput.value.slice(0, 6);
+                pinError.textContent = pinInput.value.length !== 6 ? "Pin code must be exactly 6 digits" : "";
+            });
+        });
+    </script>
 
 
     <script>
@@ -364,29 +375,29 @@
         });
     </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const aadhaarInput = document.getElementById('aadhaarApplicant');
-    const aadhaarError = document.getElementById('aadhaarApplicantError');
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const aadhaarInput = document.getElementById('aadhaarApplicant');
+            const aadhaarError = document.getElementById('aadhaarApplicantError');
 
-    aadhaarInput.addEventListener('input', () => {
-        // Remove any non-digit characters
-        aadhaarInput.value = aadhaarInput.value.replace(/\D/g, '');
-        
-        // Limit input to 12 digits
-        if(aadhaarInput.value.length > 12) {
-            aadhaarInput.value = aadhaarInput.value.slice(0, 12);
-        }
+            aadhaarInput.addEventListener('input', () => {
+                // Remove any non-digit characters
+                aadhaarInput.value = aadhaarInput.value.replace(/\D/g, '');
 
-        // Show error if not exactly 12 digits
-        if(aadhaarInput.value.length < 12) {
-            aadhaarError.textContent = "Aadhaar number must be 12 digits";
-        } else {
-            aadhaarError.textContent = "";
-        }
-    });
-});
-</script>
+                // Limit input to 12 digits
+                if (aadhaarInput.value.length > 12) {
+                    aadhaarInput.value = aadhaarInput.value.slice(0, 12);
+                }
+
+                // Show error if not exactly 12 digits
+                if (aadhaarInput.value.length < 12) {
+                    aadhaarError.textContent = "Aadhaar number must be 12 digits";
+                } else {
+                    aadhaarError.textContent = "";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
